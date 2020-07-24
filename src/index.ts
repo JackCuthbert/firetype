@@ -1,3 +1,3 @@
-export { Repository } from './Repository'
+export { Repository, Entity } from './Repository'
 
 export default Repository
