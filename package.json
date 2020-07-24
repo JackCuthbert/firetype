@@ -1,7 +1,7 @@
 {
   "name": "firetype",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "ORM for TypeScript and Google Cloud Firestore ",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
