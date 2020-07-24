@@ -6,7 +6,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "lint": "eslint --ext .ts,.tsx,.js ."
+    "lint": "eslint --ext .ts,.tsx,.js .",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "Jack Cuthbert <jckcthbrt@gmail.com>",
