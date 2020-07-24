@@ -3,7 +3,7 @@ module.exports = {
     'standard-with-typescript',
     'prettier',
     'prettier/@typescript-eslint',
-    'prettier/standard',
+    'prettier/standard'
   ],
   plugins: ['prettier'],
   rules: {
@@ -12,5 +12,6 @@ module.exports = {
   },
   parserOptions: {
     project: './tsconfig.json'
-  }
+  },
+  ignorePatterns: ['lib/**/*']
 }

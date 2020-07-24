@@ -1,5 +1,9 @@
 # firetype
 
+[![Release](https://github.com/JackCuthbert/firetype/workflows/Release/badge.svg)](https://github.com/JackCuthbert/firetype/actions?query=workflow%3ARelease)
+[![Test](https://github.com/JackCuthbert/firetype/workflows/Test/badge.svg)](https://github.com/JackCuthbert/firetype/actions?query=workflow%3ATest)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 ORM for TypeScript and Google Cloud Firestore.
 
 ## Usage
