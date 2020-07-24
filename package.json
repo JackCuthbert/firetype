@@ -1,0 +1,40 @@
+{
+  "name": "firetype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --ext .ts,.tsx,.js ."
+  },
+  "keywords": [],
+  "author": "Jack Cuthbert <jckcthbrt@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackCuthbert/firetype.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JackCuthbert/firetype/issues"
+  },
+  "homepage": "https://github.com/JackCuthbert/firetype#readme",
+  "peerDependencies": {
+    "@google-cloud/firestore": ">= 4.1.1"
+  },
+  "devDependencies": {
+    "@google-cloud/firestore": "^4.1.1",
+    "@types/node": "^14.0.25",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-config-standard-with-typescript": "^18.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  }
+}
