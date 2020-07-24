@@ -5,7 +5,8 @@ export interface Entity {
 }
 
 /**
- * Generic interface for simple Firestore interactions.
+ * Firetype repository class to create a generic abstraction over Google Cloud
+ * Datastores package.
  *
  * @example
  *
@@ -14,9 +15,11 @@ export interface Entity {
  * }
  *
  * const myRepository = new Repository<MyEntity>('root_collection')
+ *
  * myRepository.createOrUpdate({
  *   someKey: 'hello, world'
  * })
+ *
  */
 export class Repository<T extends Entity> {
   protected readonly collection: string
@@ -43,7 +46,7 @@ export class Repository<T extends Entity> {
     return userData
   }
 
-  /** Create or update (and return) the User from Datastore */
+  /** Create a new document or update an existing one (via merge) */
   async createOrUpdate(newDoc: T): Promise<T> {
     const ref = this.firestore.doc(this.createDocRef(newDoc.id))
     const doc = await ref.get()
@@ -52,7 +55,7 @@ export class Repository<T extends Entity> {
     return newDoc
   }
 
-  /** Remove the user from Datastore if it exists */
+  /** Remove the document if it exists */
   async delete(docId: string): Promise<void> {
     const userRef = this.firestore.doc(this.createDocRef(docId))
     await userRef.delete()
