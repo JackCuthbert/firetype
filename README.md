@@ -8,10 +8,15 @@ ORM for TypeScript and Google Cloud Firestore.
 
 ## Usage
 
-Install the `firetype` and the `@google-cloud/firestore` peer dependency.
+Firetype requires TypeScript to work as intended.
 
 ```
 npm install -D typescript
+```
+
+Install the `firetype` and `@google-cloud/firestore` packages.
+
+```
 npm install firetype @google-cloud/firestore
 ```
 
