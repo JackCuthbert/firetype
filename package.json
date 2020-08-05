@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint --ext .ts,.tsx,.js .",
-    "test": "echo \"No tests specified!\"; exit 0",
+    "test": "jest --detectOpenHandles",
     "prepublishOnly": "npm run build"
   },
   "keywords": [],
@@ -21,6 +21,9 @@
     "url": "https://github.com/JackCuthbert/firetype/issues"
   },
   "homepage": "https://github.com/JackCuthbert/firetype#readme",
+  "dependencies": {
+    "uuid": "^8.3.0"
+  },
   "peerDependencies": {
     "@google-cloud/firestore": ">= 4.1.1",
     "typescript": ">= 3.9"
@@ -31,7 +34,9 @@
     "@semantic-release/github": "^7.0.7",
     "@semantic-release/npm": "^7.0.5",
     "@semantic-release/release-notes-generator": "^9.0.1",
+    "@types/jest": "^26.0.8",
     "@types/node": "^14.0.27",
+    "@types/uuid": "^8.0.1",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
@@ -42,7 +47,9 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.2.2",
     "prettier": "^2.0.5",
+    "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
   }
 }
